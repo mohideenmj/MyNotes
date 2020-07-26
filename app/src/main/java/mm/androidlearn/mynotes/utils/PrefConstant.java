@@ -1,4 +1,4 @@
-package mm.androidlearn.mynotes;
+package mm.androidlearn.mynotes.utils;
 
 public class PrefConstant {
 

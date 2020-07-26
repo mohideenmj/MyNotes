@@ -1,8 +1,10 @@
-package mm.androidlearn.mynotes;
+package mm.androidlearn.mynotes.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import mm.androidlearn.mynotes.R;
 
 public class MainActivity extends AppCompatActivity {
 

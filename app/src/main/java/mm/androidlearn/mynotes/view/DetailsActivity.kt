@@ -1,9 +1,11 @@
-package mm.androidlearn.mynotes
+package mm.androidlearn.mynotes.view
 
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import mm.androidlearn.mynotes.utils.AppConstant
+import mm.androidlearn.mynotes.R
 
 class DetailsActivity : AppCompatActivity() {
     lateinit var textTitle: TextView

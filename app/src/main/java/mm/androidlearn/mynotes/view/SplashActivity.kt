@@ -1,10 +1,12 @@
-package mm.androidlearn.mynotes
+package mm.androidlearn.mynotes.view
 
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import mm.androidlearn.mynotes.utils.PrefConstant
+import mm.androidlearn.mynotes.R
 
 class SplashActivity: AppCompatActivity() {
     lateinit var sharedPreferences:SharedPreferences
@@ -19,11 +21,11 @@ class SplashActivity: AppCompatActivity() {
     private fun checkLoginStatus() {
         var isLoggedIn = sharedPreferences.getBoolean(PrefConstant.IS_LOGGED_IN,false)
         if(isLoggedIn){
-            val intent = Intent(this@SplashActivity,MyNotesActivity::class.java)
+            val intent = Intent(this@SplashActivity, MyNotesActivity::class.java)
             startActivity(intent)
         }
         else{
-            val intent = Intent(this@SplashActivity,LoginActivity::class.java)
+            val intent = Intent(this@SplashActivity, LoginActivity::class.java)
             startActivity(intent)
         }
     }

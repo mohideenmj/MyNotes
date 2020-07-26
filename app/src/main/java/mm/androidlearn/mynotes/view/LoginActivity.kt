@@ -1,4 +1,4 @@
-package mm.androidlearn.mynotes
+package mm.androidlearn.mynotes.view
 
 import android.content.Context
 import android.content.Intent
@@ -8,6 +8,9 @@ import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
+import mm.androidlearn.mynotes.utils.AppConstant
+import mm.androidlearn.mynotes.utils.PrefConstant
+import mm.androidlearn.mynotes.R
 
 class LoginActivity : AppCompatActivity() {
     lateinit var fullName: TextInputEditText
@@ -41,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
                 val username= username.text.toString()
 
                 if(fullname.isNotEmpty() && username.isNotEmpty()){
-                    val intent = Intent(this@LoginActivity,MyNotesActivity::class.java)
+                    val intent = Intent(this@LoginActivity, MyNotesActivity::class.java)
                     intent.putExtra(AppConstant.FULLNAME,fullname)
                     startActivity(intent)
                     saveLoginStatus()

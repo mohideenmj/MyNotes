@@ -1,4 +1,4 @@
-package adapter;
+package mm.androidlearn.mynotes.adapter;
 
 public class TestChallenge {
 
